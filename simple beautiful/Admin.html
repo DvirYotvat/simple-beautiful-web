@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Simple beautiful - Noy - Master of Makeup</title>
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- CSS Files -->
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet" />
+    <link href="lib/hover/hover.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/admin.css" rel="stylesheet" />
+
+    <!-- Responsive css -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="IMGS/logo.png" />
+  </head>
+
+  <body>
+    <!-- start section navbar -->
+    <nav id="main-nav">
+      <div class="row">
+        <div class="container">
+          <div class="logo">
+            <br />
+            <a href="#header">Noy Yotvat - Simple beautiful</a>
+          </div>
+
+          <div class="responsive">
+            <i data-icon="m" class="ion-navicon-round"></i>
+          </div>
+
+          <ul class="nav-menu list-unstyled">
+            <li>
+              <a href="index.html#contact" class="smoothScroll">צור קשר</a>
+            </li>
+            <li>
+              <a href="index.html#portfolio" class="smoothScroll">גלריה</a>
+            </li>
+            <li><a href="index.html#about" class="smoothScroll">על עצמי</a></li>
+            <li><a href="index.html#header" class="smoothScroll">בית</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End section navbar -->
+
+    <!-- start section header -->
+    <div id="header" class="home">
+      <div class="container">
+        <div class="header-content">
+          <h1 dir="rtl"><span class="typed2"></span></h1>
+
+          <ul class="list-unstyled list-social">
+            <li>
+              <a href="https://www.facebook.com/noy.rachmani/" target="_blank"
+                ><i class="ion-social-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/noy.yotvat/" target="_blank"
+                ><i class="ion-social-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End section header -->
+
+    </br>
+    <hr>
+    <div class="test">
+
+<div class="segment">
+    <div id = "img_manage">
+  <h1><span class="turquoise"> ניהול גלריה</span></h1>
+    <label class="label-control" for="cname">הכנסי שם לתמונה</label>
+  <div class="form-group">
+  <input type="text" class="form-control-input" id="namebox" required>
+  <div class="help-block with-errors"></div>
+  <label for="typebox">בחרי קטגוריה</label>
+  <select name="typebox" id="typebox">
+  <option value=""></option>
+  <option value="tips">טיפים</option>
+  <option value="fullmoon">פולמון</option>
+  <option value="pregnancy">ציורי הריון</option>
+  <option value="effects">אפקטים</option>
+  <option value="beauty">ביוטי</option>
+  </select>
+  <div class="help-block with-errors"></div>
+  <img id="myimg"> <label id="UpProgress"></label> <br><br>
+  <button id = "select" class="form-control-submit-button"> בחרי תמונה </button>
+  <br>
+  <br>
+  <button id="upload" class="form-control-submit-button"> העלאה תמונה </button>
+  <div class="help-block with-errors"></div>
+  </div>
+  <br>
+  <br>
+  <button id = "select" class="form-control-submit-button" onclick="getImagesToDelete()"> פתח גלריה למחיקה </button>
+  <br>
+  <br>
+  <div id="delete_imgs"></div>
+  </div>
+                            
+  </div>
+  </div>
+    <hr>                
+    <!-- footer -->
+    <div id="footer" class="text-center">
+      <div class="container">
+        <div class="credits">
+          <p>
+            © All rights to
+            <a href="https://github.com/DvirYotvat" target="_blank"
+              >Dvir Yotvat</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End footer -->
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- Javascript File -->
+    <script src="js/firebase.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

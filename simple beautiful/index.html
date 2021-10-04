@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Simple beautiful - Noy - Master of Makeup</title>
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- CSS Files -->
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet" />
+    <link href="lib/hover/hover.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/send_msg.css" rel="stylesheet" />
+
+
+    <!-- Responsive css -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="IMGS/logo.png" />
+  </head>
+
+  <body onload="getImagesAndTips()">
+    <!-- start section navbar -->
+    <nav id="main-nav">
+      <div class="row">
+        <div class="container">
+          <div class="logo">
+          <br>
+            <a href="#header">Noy Yotvat - Simple beautiful</a>
+          </div>
+
+          <div class="responsive">
+            <i data-icon="m" class="ion-navicon-round"></i>
+          </div>
+
+          <ul class="nav-menu list-unstyled">
+            <li><a href="#contact" class="smoothScroll">צור קשר</a></li>
+            <li><a href="#portfolio" class="smoothScroll">גלריה</a></li>
+            <li><a href="#about" class="smoothScroll">על עצמי</a></li>
+            <li><a href="#header" class="smoothScroll">בית</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End section navbar -->
+
+    <!-- start section header -->
+    <div id="header" class="home">
+      <div class="container">
+        <div class="header-content">
+          <h1 dir="rtl"><span class="typed"></span></h1>
+
+          <ul class="list-unstyled list-social">
+            <li>
+              <a href="https://www.facebook.com/noy.rachmani/" target="_blank"
+                ><i class="ion-social-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/noy.yotvat/" target="_blank"
+                ><i class="ion-social-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End section header -->
+  
+
+
+
+
+    <!-- start section about us -->
+    <div id="about" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-4">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="IMGS/me.jpeg" class="img-responsive" alt="me" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-descr">
+              <p class="p-heading" dir="rtl">
+                נוי יוטבת. מאפרת ביוטי, כלות, אירועים ואפקטים.
+              </p>
+              <p class="separator" dir="rtl">
+                מגיל צעיר נמשכתי לאיפור. לאחר הצבא, נרשמתי לקורס איפור "ביוטי"
+                אצל ירין שחף. כשסיימתי את הקורס, כל כך התאהבתי שנרשמתי לקורס
+                נוסף "מאסטר" - קורס אפקטים ובמה. לאחר הלימודים הבנתי שעולם
+                האיפור הוא בדיוק בשבילי: לגרום לאישה להרגיש יותר יפה. מאז ועד
+                היום אני מאפרת לקוחות רבים, נהנת מהתוצאות ומהתגובות החיוביות.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section about us -->
+
+<!-- Gallery Grid -->
+<div id="portfolio" class="text-left paddsection">
+  <div class="container">
+    <div class="section-title text-center">
+    <h2 dir="rtl">גלרית תמונות</h2>
+  </div>
+</div>
+<hr>
+<div class="main">
+  <div class="section-title text-center">
+    <div id="myBtnContainer">
+      <button class="btn" onclick="filterSelection('tips')"> טיפים</button>
+      <button class="btn" onclick="filterSelection('fullmoon')"> פול מון</button>
+      <button class="btn" onclick="filterSelection('pregnancy')"> ציורי הריון</button>
+      <button class="btn" onclick="filterSelection('effects')"> אפקטים</button>
+      <button class="btn" onclick="filterSelection('beauty')"> ביוטי</button>
+      <button class="btn active" onclick="filterSelection('all')"> כל התמונות</button>
+    </div>
+    <div class="row" id="pictures"></div>
+  </div>
+  <hr>
+</div>
+<!-- end Gallery Grid -->
+
+    <!-- start sectoion contact -->
+
+    <div class="send_msg">
+    <div id="contact" class="paddsection">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="contact-contact">
+
+    <div class="side">
+      <h1 dir="rtl">Contact us - 0508512934</h1>
+      <p dir="rtl">
+        <textarea id="cmessage" placeholder="הודעתך..."></textarea>
+      </p>
+    </div>
+    <div class="side">
+      <p dir="rtl">
+        <input id="cname" type="text" placeholder="נושא" >
+      </p>
+      <p dir="rtl">
+        <input id="cemail" type="email" placeholder="מייל" >
+      </p>
+      <p dir="rtl">
+        <button id="sendLetter" onclick="csubmitForm()">שלח</button>
+      </p>
+    </div>
+  </article>
+  <div class="envelope front"></div>
+  <div class="envelope back"></div>
+</div>
+
+      </div>
+    </div>
+    </div>
+    <!-- contact -->
+
+
+
+    <!-- footer -->
+    <div id="footer" class="text-center">
+      <div class="container">
+        <div class="socials-media text-center">
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.facebook.com/noy.rachmani/" target="_blank"
+                ><i class="ion-social-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/noy.yotvat/" target="_blank"
+                ><i class="ion-social-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="credits">
+          <p>
+            © All rights to
+            <a href="https://github.com/DvirYotvat" target="_blank"
+              >Dvir Yotvat</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End footer -->
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>  
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script> 
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- Javascript File -->
+    <script src="js/firebase.js"></script>
+    <script src="js/main.js"></script>
+                    
+  </body>
+</html>
